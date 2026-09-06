@@ -1,0 +1,25 @@
+{
+  "startedAt": "2026-09-05T17:48:49.809Z",
+  "users": {
+    "total": 4189,
+    "created": 4189,
+    "existing": 0,
+    "updated": 4189,
+    "failed": 0
+  },
+  "teams": {
+    "total": 17,
+    "created": 14,
+    "existing": 3,
+    "updated": 0,
+    "failed": 0
+  },
+  "memberships": {
+    "total": 66,
+    "created": 66,
+    "existing": 0,
+    "failed": 0
+  },
+  "errors": [],
+  "finishedAt": "2026-09-05T18:30:27.856Z"
+}
