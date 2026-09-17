@@ -48,7 +48,7 @@
         {
             "$id": "6a9c4b36003c1c6f341c",
             "name": "check-users",
-            "runtime": "node-16.0",
+            "runtime": "node-22",
             "path": "functions/check-users",
             "entrypoint": "src/main.js",
             "execute": [
@@ -73,6 +73,171 @@
             "buildSpecification": "s-0.5vcpu-512mb",
             "runtimeSpecification": "s-0.5vcpu-512mb",
             "deploymentRetention": 0
+        },
+        {
+            "$id": "6981c83f0005f21dfd8f",
+            "name": "razorpay",
+            "runtime": "node-22",
+            "buildSpecification": "s-0.5vcpu-512mb",
+            "runtimeSpecification": "s-0.5vcpu-512mb",
+            "execute": [],
+            "events": [],
+            "scopes": [
+                "users.read"
+            ],
+            "schedule": "",
+            "timeout": 15,
+            "enabled": true,
+            "logging": true,
+            "entrypoint": "src/main.js",
+            "commands": "npm install",
+            "ignore": [
+                "node_modules",
+                ".npm"
+            ],
+            "deploymentRetention": 0,
+            "path": "functions/razorpay",
+            "previewDomainTarget": "region",
+            "previewDomainLabel": "razorpay-6aa8"
+        },
+        {
+            "$id": "697ce8ef003c4c6b4070",
+            "name": "printa4",
+            "runtime": "node-22",
+            "buildSpecification": "s-0.5vcpu-512mb",
+            "runtimeSpecification": "s-0.5vcpu-512mb",
+            "execute": [],
+            "events": [],
+            "scopes": [
+                "users.read"
+            ],
+            "schedule": "",
+            "timeout": 15,
+            "enabled": true,
+            "logging": true,
+            "entrypoint": "src/main.js",
+            "commands": "npm install",
+            "ignore": [
+                "node_modules",
+                ".npm"
+            ],
+            "deploymentRetention": 0,
+            "path": "functions/printa4",
+            "previewDomainTarget": "region",
+            "previewDomainLabel": "printa4-6aa8"
+        },
+        {
+            "$id": "6981c978002e93d7dd2d",
+            "name": "user-created",
+            "runtime": "node-22",
+            "buildSpecification": "s-0.5vcpu-512mb",
+            "runtimeSpecification": "s-0.5vcpu-512mb",
+            "execute": [],
+            "events": [
+                "users.*.create",
+                "users.*.delete",
+                "teams.*.memberships.*.create",
+                "teams.*.memberships.*.delete"
+            ],
+            "scopes": [
+                "users.read"
+            ],
+            "schedule": "",
+            "timeout": 15,
+            "enabled": true,
+            "logging": true,
+            "entrypoint": "src/main.js",
+            "commands": "npm install",
+            "ignore": [
+                "node_modules",
+                ".npm"
+            ],
+            "deploymentRetention": 0,
+            "path": "functions/user-created",
+            "previewDomainTarget": "region",
+            "previewDomainLabel": "user-created-6aa8"
+        },
+        {
+            "$id": "69b23aa80036dd360497",
+            "name": "notification-trigger",
+            "runtime": "node-22",
+            "buildSpecification": "s-0.5vcpu-512mb",
+            "runtimeSpecification": "s-0.5vcpu-512mb",
+            "execute": [
+                "any"
+            ],
+            "events": [],
+            "scopes": [
+                "users.read"
+            ],
+            "schedule": "",
+            "timeout": 15,
+            "enabled": true,
+            "logging": true,
+            "entrypoint": "src/main.js",
+            "commands": "npm install",
+            "ignore": [
+                "node_modules",
+                ".npm"
+            ],
+            "deploymentRetention": 0,
+            "path": "functions/notification-trigger",
+            "previewDomainTarget": "region",
+            "previewDomainLabel": "notification-trigger-6aa8"
+        },
+        {
+            "$id": "69f1b60a0037f0d75dd1",
+            "name": "queue-handler",
+            "runtime": "node-22",
+            "buildSpecification": "s-0.5vcpu-512mb",
+            "runtimeSpecification": "s-0.5vcpu-512mb",
+            "execute": [],
+            "events": [],
+            "scopes": [
+                "users.read"
+            ],
+            "schedule": "",
+            "timeout": 15,
+            "enabled": true,
+            "logging": true,
+            "entrypoint": "src/main.js",
+            "commands": "npm install",
+            "ignore": [
+                "node_modules",
+                ".npm"
+            ],
+            "deploymentRetention": 0,
+            "path": "functions/queue-handler",
+            "previewDomainTarget": "region",
+            "previewDomainLabel": "queue-handler-6aa8"
+        },
+        {
+            "$id": "6a291b1300268bfe2df0",
+            "name": "whatsapp-webhook",
+            "runtime": "node-22",
+            "buildSpecification": "s-0.5vcpu-512mb",
+            "runtimeSpecification": "s-0.5vcpu-512mb",
+            "execute": [
+                "any"
+            ],
+            "events": [],
+            "scopes": [
+                "users.read"
+            ],
+            "schedule": "",
+            "timeout": 15,
+            "enabled": true,
+            "logging": true,
+            "entrypoint": "src/main.js",
+            "commands": "npm install",
+            "ignore": [
+                "node_modules",
+                ".npm"
+            ],
+            "deploymentRetention": 0,
+            "path": "functions/whatsapp-webhook",
+            "previewDomainTarget": "region",
+            "previewDomainLabel": "whatsapp-webhook-6aa8"
         }
     ],
     "sites": [

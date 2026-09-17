@@ -10,7 +10,7 @@ import {
 } from "node-appwrite";
 
 const APPWRITE_SERVER_ENDPOINT =
-  process.env.APPWRITE_SERVER_ENDPOINT;
+  process.env.APPWRITE_FUNCTION_API_ENDPOINT;
 
 const APPWRITE_PROJECT_ID =
   process.env.APPWRITE_PROJECT_ID;
