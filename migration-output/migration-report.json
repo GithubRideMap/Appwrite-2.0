@@ -1,25 +1,25 @@
 {
-  "startedAt": "2026-09-05T17:48:49.809Z",
+  "startedAt": "2026-09-10T14:28:14.942Z",
   "users": {
-    "total": 4189,
-    "created": 4189,
+    "total": 0,
+    "created": 0,
     "existing": 0,
-    "updated": 4189,
+    "updated": 0,
     "failed": 0
   },
   "teams": {
-    "total": 17,
-    "created": 14,
-    "existing": 3,
+    "total": 0,
+    "created": 0,
+    "existing": 0,
     "updated": 0,
     "failed": 0
   },
   "memberships": {
-    "total": 66,
-    "created": 66,
+    "total": 0,
+    "created": 0,
     "existing": 0,
     "failed": 0
   },
   "errors": [],
-  "finishedAt": "2026-09-05T18:30:27.856Z"
+  "finishedAt": "2026-09-10T14:28:15.104Z"
 }

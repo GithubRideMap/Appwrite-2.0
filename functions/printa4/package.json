@@ -1,0 +1,18 @@
+{
+  "name": "starter-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "type": "module",
+  "scripts": {
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "node-appwrite": "^20.2.1",
+    "pdf-lib": "^1.17.1",
+    "razorpay": "^2.9.6"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5"
+  }
+}
